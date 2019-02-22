@@ -7,7 +7,7 @@ export default class Form extends React.Component {
 
 		this.state = {
 			userName: '',
-			commnents: '',
+			comments: '',
 			topic: 'vue'
 		}
 	}
