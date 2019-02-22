@@ -21,7 +21,7 @@ export default class Form extends React.Component {
 
 	handleCommentsChange = (event) => {
 		this.setState({
-			commnents: event.target.value
+			comments: event.target.value
 		});
 	}
 
@@ -32,7 +32,7 @@ export default class Form extends React.Component {
 	}
 
 	handleSubmit = (event) => {
-		alert('${this.state.userName}  ${this.state.commnents}')
+		alert(`${this.state.userName} : ${this.state.comments} : ${this.state.topic}`);
 	}
 
 	render() {
@@ -47,7 +47,7 @@ export default class Form extends React.Component {
 
 				<div>
 					<label>Comments</label>
-					<textarea value={this.state.commnents}
+					<textarea value={this.state.comments}
 					          onChange={this.handleCommentsChange}>
 					</textarea>
 				</div>
