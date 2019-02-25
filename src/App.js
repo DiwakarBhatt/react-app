@@ -15,6 +15,9 @@ import NameList from './components/NameList'
 import StyleSheet from './components/StyleSheet'
 import Inline from './components/Inline'
 import Form from './components/Form'
+import LifecycleA from './components/LifecycleA'
+import FragmentDemo from './components/FragmentDemo'
+import Table from './components/Table'
 import './components/appStyles.css'
 import styles from './components/appStyles.module.css'
 
@@ -22,8 +25,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <Form />
-
+          <Table />
+          {/*<FragmentDemo />*/}
+          {/*<LifecycleA />*/}
+          {/*<Form />*/}
           {/*<Message />*/}
           {/*<Counter />*/}
           {/*<FunctionClick />*/}
